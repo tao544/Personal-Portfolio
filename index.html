@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Personal Portfolio</title>
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/f981d86afc.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div id="header">
+        <div class="container">
+            <nav>
+            <img src="TAO (1).png" alt="" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+        <div class="header-text">
+            <p>WEB DEVELOPER</p>
+            <h1>Hi, I'm <span style="color: #ff004f;">Adepoju</span><br>Taoheed From Nigeria </h1>
+        </div>
+    </div>
+  </div>
+  <div id="about">
+    <div class="my-container">
+        <div class="my-row">
+            <div class="my-column-1">
+                <img src="second grad.jpg" alt="logo">
+            </div>
+            <div class="my-column-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Hey, I'm Adepoju Taoheed 👋
+I'm a full-stack web developer who enjoys bringing ideas to life on the web. I love exploring new tools, building projects that challenge me, and sharing my growth along the way. Tech isn't just my career path it's my passion, and I'm excited to see where this journey takes me 🚀.</p>
+
+                <div class="tab-titles ">
+                    <p class="tab-links table-link" onclick="opentab(skills)">Skills</p>
+                    <p class="tab-links" onclick="opentab(Experience)">Experience</p>
+                    <p class="tab-links" onclick="opentab(Education)">Education</p>
+                </div>
+                <div class="table-content active-tab" id="skills">
+                  <ul>
+                    <li><span style="color: #ff005196; font-size: 14px;">Frontend development</span><br>Designing users interfaces</li>
+                    <li><span style="color: #ff005196; font-size: 14px;">backend Development</span><br>Designing database</li>
+                    <li><span style="color: #ff005196; font-size: 14px;">web Development</span><br>web app development</li>
+                    <li><span style="color: #ff005196; font-size: 14px;">Designer</span><br>Graphics design</li>
+                  </ul>
+                <div class="table-content" id="Experience">
+                  <ul>
+                    <li><span style="color: #ff005196; font-size: 14px;">2025- current</span><br>Design Training at Atibyan Academy </li>
+                    <li><span style="color: #ff005196; font-size: 14px;">2025- current</span><br>Training at Atibyan Academy</li>
+                    <li><span style="color: #ff005196; font-size: 14px;">2020-2023</span><br>graphics Designer lead at Adeedraiment</li>
+                  </ul>
+                <div class="table-content" id="Education">
+                  <ul>
+                    <li><span style="color: #ff005196; font-size: 14px;">2025</span><br>Full stack Web Dev Training at Atibyan Academy</li>
+                    <li><span style="color: #ff005196; font-size: 14px;">2024</span><br>B.Tech in Human Anatomy at<br>Ladoke akintola university of technology</li>
+                  </ul>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+
+  <!-- ----------services----------->
+   <div id="services">
+    <div class="container">
+      <h1 class="sub-title">My Services</h1>
+      <div class="services-list">
+        <div>
+          <i class="fa-brands fa-html5"></i>
+          <h2>Frontend Development</h2>
+          <p>I build responsive and user-friendly websites using HTML, CSS, JavaScript, and frameworks like React and Bootstrap.</p>
+          <a href="#">Learn more</a>
+        </div>
+        <div>
+          <i class="fa-solid fa-crop"></i>
+          <h2>Graphics design</h2>
+          <p>I create clean, modern and visually appealing designs that communicates ideas respectively.</p>
+          <a href="#">Learn more</a>
+        </div>
+        <div>
+          <i class="fa-solid fa-database"></i>
+          <h2>Backend Development</h2>
+          <p>I build secure, efficient and scalable backend systems that power applications seamlessly.</p>
+          <a href="#">Learn more</a>
+        </div>
+      </div>
+    </div>
+   </div>
+   <!-- --------------portfolio---------------->
+    <div id="portfolio">
+      <div class="container">
+         <h1 class="sub-title">My Work</h1>
+         <div class="work-list">
+          <div class="work">
+            <img src="preview (1).jpg">
+            <div class="layers">
+              <h3 style="color: rgba(255, 255, 255, 0.696);">Social QR code card</h3>
+              <p>"A simple QR code card that connects you to resources for learning and building"</p>
+              <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="preview.jpg">
+             <div class="layers">
+              <h3 style="color: rgba(255, 255, 255, 0.696);">Social profile card</h3>
+              <p>"Simple, dark-themed profile card with links to all socials. One card, all connections"</p>
+              <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+              
+            </div>
+          </div>
+          <div class="work">
+            <img src="preview (2).jpg">
+             <div class="layers">
+              <h3 style="color: rgba(255, 255, 255, 0.696);">Blog card</h3>
+              <p>“Catch a glimpse of ideas before diving deep — this blog card gives a clean preview + link.”</p>
+              <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+          </div>
+         </div>
+      </div>
+      <a href="#" class="btn">See more</a>
+    </div>
+
+
+    <!-- ----------contacts-------- -->
+
+    <div id="contact">
+      <div class="container">
+        <div class="sub-contact">
+          <div class="first-contact">
+            <h1 class="first-one">Contact Me</h1>
+            <p><i class="fa-solid fa-paper-plane"></i>taoheedadepoju1@gmail.com</p>
+            <p><i class="fa-solid fa-square-phone"></i>08100283253</p>
+            <div class="social-icons">
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+              <a href=""><i class="fa-brands fa-square-x-twitter"></i></a>
+              <a href=""><i class="fa-brands fa-linkedin"></i></a>
+              <a href=""><i class="fa-brands fa-square-whatsapp"></i></a>
+            </div>
+          </div>
+          <div class="second-contact">
+            <form>
+              <input type="text" name="Your Name" placeholder="Your Name" required><br>
+              <input type="email" name="Email" placeholder="Your Email" required><br>
+              <textarea name="Messages" id="Messages" rows="6" placeholder="Your messages"></textarea><br>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      var sidemenu =document.getElementById("sidemenu");
+      function openmenu(){
+        sidemenu.style.right ="0";
+      }
+      function closemenu(){
+        sidemenu.style.right ="-200px";
+      }
+    </script>
+
+
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script> -->
+  </body>
+</html>
