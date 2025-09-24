@@ -41,24 +41,24 @@
 I'm a full-stack web developer who enjoys bringing ideas to life on the web. I love exploring new tools, building projects that challenge me, and sharing my growth along the way. Tech isn't just my career path it's my passion, and I'm excited to see where this journey takes me 🚀.</p>
 
                 <div class="tab-titles ">
-                    <p class="tab-links table-link" onclick="opentab(skills)">Skills</p>
-                    <p class="tab-links" onclick="opentab(Experience)">Experience</p>
-                    <p class="tab-links" onclick="opentab(Education)">Education</p>
+                    <p class="tab-links table-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('Education')">Education</p>
                 </div>
-                <div class="table-content active-tab" id="skills">
+                <div class="table-contents active-tab" id="skills">
                   <ul>
                     <li><span style="color: #ff005196; font-size: 14px;">Frontend development</span><br>Designing users interfaces</li>
                     <li><span style="color: #ff005196; font-size: 14px;">backend Development</span><br>Designing database</li>
                     <li><span style="color: #ff005196; font-size: 14px;">web Development</span><br>web app development</li>
                     <li><span style="color: #ff005196; font-size: 14px;">Designer</span><br>Graphics design</li>
                   </ul>
-                <div class="table-content" id="Experience">
+                <div class="table-contents" id="Experience">
                   <ul>
                     <li><span style="color: #ff005196; font-size: 14px;">2025- current</span><br>Design Training at Atibyan Academy </li>
                     <li><span style="color: #ff005196; font-size: 14px;">2025- current</span><br>Training at Atibyan Academy</li>
                     <li><span style="color: #ff005196; font-size: 14px;">2020-2023</span><br>graphics Designer lead at Adeedraiment</li>
                   </ul>
-                <div class="table-content" id="Education">
+                <div class="table-contents" id="Education">
                   <ul>
                     <li><span style="color: #ff005196; font-size: 14px;">2025</span><br>Full stack Web Dev Training at Atibyan Academy</li>
                     <li><span style="color: #ff005196; font-size: 14px;">2024</span><br>B.Tech in Human Anatomy at<br>Ladoke akintola university of technology</li>
@@ -161,6 +161,24 @@ I'm a full-stack web developer who enjoys bringing ideas to life on the web. I l
       </div>
     </div>
 
+
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+      var tablecontents = document.getElementsByClassName("table-contents");
+
+      function opentab(tabName){
+        for(tablink of tablinks){
+          tablink.classList.remove("table-link");
+        }
+        for(tablecontent of tablecontents){
+          tablecontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("table-link");
+        document.getElementById(tabName).classList.add("active-tab");
+      }
+    </script>
     <script>
       var sidemenu =document.getElementById("sidemenu");
       function openmenu(){

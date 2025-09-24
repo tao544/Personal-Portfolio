@@ -142,15 +142,15 @@ nav ul li a:hover::after{
     width: 50%;
 
 }
-.table-content ul li{
+.table-contents ul li{
     list-style: none;
     margin: 10px;
 }
-.table-content{
+.table-contents{
     display: none;
 }
 
-.table-content.active-tab{
+.table-contents.active-tab{
     display: block;
 }
 /* -------------services-----------> */
